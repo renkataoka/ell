@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>PageLoad</title>
+  </head>
+  <body>
+    <div class="page-loader">
+      <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+    </div>
+
+    <div>
+      <p><a href="http://www.stb.tsukuba.ac.jp/~ell/pc/index.html"><img src="YOBOHYO.png" alt="" class="dance"></a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(window).on('load', function(){
+        $(".page-loader").delay(2000).fadeOut(1000);
+      });
+    </script>
+  </body>
+</html>
