@@ -2,17 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <title>Shall we dance?</title>
   </head>
   <body>
     <header>
-      
+
     </header>
+    <!--
     <div class="select">
       <a href="toell_auto.html">Do you want to ride on?</a><br>
       <p>OR</p>
       <a href="toell_click.html">Do you want to click on?</a>
     </div>
+    -->
+    <div class="menu">
+      <ul class="navi">
+        <li><div class="parentmenu">Choice</div>
+          <ul class="submenu">
+            <li><a href="toell_auto.html">Do you want to ride on?</a></li>
+            <li><a href="toell_click.html">Do you want to ride on?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      jQuery(function($){
+        $('ul.submenu').hide();
+        $('ul.navi li div.parentmenu').click(function() {
+          $('ul.submenu').slideUp(200);
+          $('ul.navi li div.parentmenu').removeClass('selected');
+          if($('+ul', this).css('display') == 'none') {
+            $('+ul', this).slideDown(200);
+            $(this).addClass('selected');
+          }
+        });
+      });
+    </script>
   </body>
 </html>

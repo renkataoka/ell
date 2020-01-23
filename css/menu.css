@@ -1,0 +1,57 @@
+div.menu{
+  width:30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+ul, li{
+  margin:0;
+  padding:0;
+}
+
+ul.navi{
+  list-style: none;
+}
+
+ul.navi li div.parrentmenu{
+  cursor: pointer;
+  color:#777;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+ul.navi li div.selected {
+  color: #333;
+  margin-bottom: 10px;
+  /*サブメニューを表示している時は、親メニューの色を変更*/
+}
+
+ul li {
+  line-height: 30px;
+}
+
+ul li a {
+  outline: 0;
+  /*リンクをクリックした際、リンクの回りに点線が表示されないように*/
+  /*マウスオーバー時に背景に画像を表示するためパディングを指定*/
+  display: block;
+  text-decoration: none;
+  color: #777;
+}
+ul li a:hover {
+  color: #3E74AD;
+}
+
+ul.submenu {
+  font-size: 18px;
+  list-style-type: none;
+}
+.navi > li{
+  border: 1px solid #999;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 3px;
+}
+ul.submenu a {
+  margin: 5px 0;
+}
