@@ -14,6 +14,21 @@ img.dance {
   margin-right: 20%;
 }
 
+
+
+div.select{
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 24px;
+}
+
+header{
+  height:100px;
+}
+
+
+/* 以下、ロード画面 */
+
 .spinner {
   margin: 100px auto;
   width: 40px;
